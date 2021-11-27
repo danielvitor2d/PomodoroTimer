@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, button {
+  font: 400 24px 'Roboto', sans-serif;
+}
+
+strong {
+  font: 700 24px 'Roboto', sans-serif;
+}
+
+body {
+  background: #E5E5E5;
+  color: #000;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  height: 100vh;
+
+  > div:first-child {
+    height: 255px;
+    width: 581px;
+    background: #000D6B;
+
+    padding: 0 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    mix-blend-mode: normal;
+    border-radius: 28px 28px 0px 0px;
+
+    > strong {
+      margin-top: 10px;
+      color: #fff;
+    }
+
+    .clock {
+      width: 179px;
+      height: 94px;
+      background: #fff;
+      margin-top: 10px;
+
+      p {
+        text-align: center;
+        justify-content: center;
+        font-size: 65px;
+        line-height: 76px;
+        padding-top: 8px;
+      }
+    }
+
+    .buttons {
+      margin-top: 35px;
+
+      button {
+        cursor: pointer;
+        width: 90px;
+        height: 45px;
+        background: #fff;
+      }
+    }
+  }
+
+  > div:last-child {
+    height: 122px;
+    width: 581px;
+    background: #FFFFFF;
+
+    padding: 0 32px;
+
+    border-radius: 0 0 27px 27px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .pomodoro, .break {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+
+      p {
+        margin-left: 15px;
+        padding-top: 17px;
+      }
+    }
+  }
+}
+
+.inc-button {
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid #000D6B;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.dec-button {
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 25px solid #000D6B;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.leftBox {
+  margin-right: 60px;
+}
+
+.rightBox {
+  margin-left: 60px;
+}
+
+.text {
+  margin-left: 30px;
+}
+
+#playButton {
+  margin-right: 48px;
+}
+
+#resetButton {
+  margin-left: 48px;
+}
